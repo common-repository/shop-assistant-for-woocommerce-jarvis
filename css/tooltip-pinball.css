@@ -1,0 +1,252 @@
+
+.qcld_jarvis_tooltip {
+    position: absolute;
+    bottom: 0px;
+    right: 35px;
+    color: #fff;
+    min-width: 360px;
+    display: inline;
+    z-index: 99;
+}
+
+.qcld_jarvis_tooltip ul.qcld_jarvis_msg {
+    padding: 0;
+    margin: 0;
+}
+
+.qcld_jarvis_tooltip ul.qcld_jarvis_msg > li {
+    list-style: none;
+    display: none;
+    font-size: 14px;
+    background: none !important;
+    color: #fff !important;
+}
+
+.qcld_jarvis_tooltip ul.qcld_jarvis_msg > li.active {
+    display: block;
+}
+
+.qcld_jarvis_tooltip ul.qcld_jarvis_msg > li a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    border: none;
+    box-shadow: none;
+}
+
+.qcld_jarvis_tooltip ul.qcld_jarvis_msg > li a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Trigger text */
+
+.tooltip-item {
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+/* Gap filler */
+
+.tooltip-item::after {
+    content: '';
+    position: absolute;
+    width: 360px;
+    height: 20px;
+    bottom: 100%;
+    left: 50%;
+    pointer-events: none;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.tooltip:hover .tooltip-item::after {
+    pointer-events: auto;
+}
+
+/* Tooltip */
+
+.tooltip-content {
+    position: absolute;
+    z-index: 9999;
+    width: 360px;
+    right: 50px;
+    /*margin: 0 0 20px -180px;*/
+    bottom: 100%;
+    text-align: left;
+    font-size: 0.765em;
+    line-height: 1.4;
+    box-shadow: -5px -5px 15px rgba(48, 54, 61, 0.2);
+    background: rgba(42, 48, 53, 0.61);
+    opacity: 0;
+    cursor: default;
+    pointer-events: none;
+    padding: 15px;
+}
+
+.tooltip-effect-1 .tooltip-content {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-2 .tooltip-content {
+    -webkit-transform-origin: 50% calc(100% + 10px);
+    transform-origin: 50% calc(100% + 10px);
+    -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 45deg);
+    transform: perspective(1000px) rotate3d(1, 0, 0, 45deg);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.tooltip-effect-3 .tooltip-content {
+    -webkit-transform: translate3d(0, 10px, 0) rotate3d(1, 1, 0, 25deg);
+    transform: translate3d(0, 10px, 0) rotate3d(1, 1, 0, 25deg);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-4 .tooltip-content {
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: scale3d(0.7, 0.3, 1);
+    transform: scale3d(0.7, 0.3, 1);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.tooltip-effect-5 .tooltip-content {
+    width: 180px;
+    margin-left: -90px;
+    -webkit-transform-origin: 50% calc(100% + 6em);
+    transform-origin: 50% calc(100% + 6em);
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    -webkit-transition-timing-function: ease, cubic-bezier(.17, .67, .4, 1.39);
+    transition-timing-function: ease, cubic-bezier(.17, .67, .4, 1.39);
+}
+
+.tooltip:hover .tooltip-content, .active .tooltip-content {
+    pointer-events: auto;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+    transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+}
+
+.tooltip-effect-2:hover .tooltip-content {
+    -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+    transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+}
+
+/* Arrow */
+
+.tooltip-content::after {
+    content: '';
+    position: absolute;
+    margin-top: -10px;
+    bottom: 0;
+    right: -40px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 40px solid rgba(42, 48, 53, 0.61);
+    border-bottom: 10px solid transparent;
+}
+.qcld_jarvis_tooltip_genie_cart .tooltip-content::after{
+    display: none;
+}
+/*** Tooltip border****/
+@keyframes borderAnimation {
+    0% {
+        width: 24px;
+    }
+    100% {
+        width: 100%;
+        opacity: 0.8;
+    }
+}
+
+/*.tooltip-content::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    width: 100%;
+    !*border-left: 2px solid;
+     border-top: 2px solid;
+     border-bottom: 2px solid;
+     border-color: rgba(42, 48, 53, 0.61);
+     animation: borderAnimation 5s infinite; *!
+    -webkit-transition: all 0.5s ease; !* Safari 3.2+, Chrome *!
+    -moz-transition: all 0.5s ease; !* Firefox 4-15 *!
+    -o-transition: all 0.5s ease; !* Opera 10.5-12.00 *!
+    transition: all 0.5s ease; !* Firefox 16+, Opera 12.50+ *!
+
+}*/
+
+/* Tooltip content*/
+
+.tooltip-content img {
+    position: relative;
+    height: 170px;
+    display: block;
+    float: left;
+    margin-right: 1em;
+}
+
+.tooltip-text {
+    font-size: 0.68em;
+    line-height: 1.35;
+    display: block;
+    padding: 1.31em 1.21em 1.21em 0;
+    color: #fff;
+}
+
+.tooltip-effect-5 .tooltip-text {
+    padding: 1.4em;
+}
+
+.tooltip-text a {
+    font-weight: bold;
+}
+
+.tooltip-effect-4 .tooltip-content {
+    border-radius: 8px 8px 0px 8px;
+}
+
+/***********Code by Tareq start *********/
+.qcld_jarvis_tooltip_genie_cart {
+    position: absolute;
+    bottom: 50px;
+    right: 35px;
+    color: #fff;
+    min-width: 360px;
+    display: inline;
+    z-index: 999;
+}
+
+.qcld_jarvis_tooltip_genie_cart ul > li {
+    list-style: none;
+    font-size: 14px;
+}
+
+/***********Code by Tareq end *********/
+
+@media screen and (max-width: 500px) {
+    .qcld_jarvis_tooltip, .qcld_jarvis_tooltip_genie_cart {
+        bottom: 10px;
+        right: 55px;
+    }
+
+    .tooltip-content {
+        width: 200px;
+
+    }
+
+}

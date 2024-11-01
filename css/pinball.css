@@ -1,0 +1,1070 @@
+/***************** Pinball Start ******************/
+/*********************
+ball Selector
+**********************/
+@keyframes ballAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.jarvis-ball {
+    position: relative;
+    background: #BDBDBD;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #9E9E9E;
+    float: right;
+    /*animation: ballAnimation 2s;*/
+    /*opacity: 0.3;*/
+    -webkit-transition: all 1s linear; /* Safari 3.2+, Chrome */
+    -moz-transition: all 1s linear; /* Firefox 4-15 */
+    -o-transition: all 1s linear; /* Opera 10.5-12.00 */
+    transition: all 1s linear; /* Firefox 16+, Opera 12.50+ */
+    cursor: pointer;
+    z-index: 9999999999;
+    margin-top: 60px;
+}
+
+.jarvis-ball:hover {
+    opacity: 1;
+}
+* {
+    box-sizing: initial;
+}
+
+@keyframes ballAnimation2 {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0.6;
+    }
+}
+
+.jarvis-ball:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    animation: ballAnimation2 2s 4 alternate;
+    -webkit-transition: all 0.5s linear; /* Safari 3.2+, Chrome */
+    -moz-transition: all 0.5s linear; /* Firefox 4-15 */
+    -o-transition: all 0.5s linear; /* Opera 10.5-12.00 */
+    transition: all 0.5s linear; /* Firefox 16+, Opera 12.50+ */
+}
+
+.jarvis-ball:hover:after {
+    transform: scale(2.5);
+    opacity: 0.6;
+}
+
+.jarvis-ball.quickball-animation-active:after {
+    background: #182438;
+}
+
+.jarvis-ball.quickball-animation-deactive:after {
+    background-color: transparent;
+}
+
+.jarvis-ball:before {
+    content: '';
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    /*background: rgba(5, 5, 5, 0.38);
+    */
+    left: -70px;
+    top: -70px;
+    display: none;
+    border-radius: 50%;
+}
+
+.jarvis-ball:hover:before {
+    display: block;
+}
+
+.jarvis-ball ul {
+    margin: 0;
+    padding: 0;
+}
+
+.jarvis-ball ul li {
+    list-style: none;
+}
+
+/*********************************************
+CSS for hover open ball
+*******************************************/
+@keyframes smallBallAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.jarvis-ball ul li a {
+    background-image: url("../images/ball-item-icon.png") !important;
+    background-repeat: no-repeat;
+    background-color: #616161 !important;
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    text-align: center;
+
+    width: 30px;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.jarvis-ball ul li a:hover:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    top: -2px;
+    left: -2px;
+    padding: 2px;
+    z-index: -1;
+    box-shadow: 0 0 0 3px #383838;
+}
+
+.jarvis-ball ul li[data-ball-style="1"] a {
+    background-position: -24px -10px;
+}
+
+.jarvis-ball ul li[data-ball-style="2"] a {
+    background-position: -65px -10px;
+}
+
+.jarvis-ball ul li[data-ball-style="3"] a {
+    background-position: -106px -10px;
+}
+
+.jarvis-ball ul li[data-ball-style="4"] a {
+    background-position: -144px -10px;
+}
+
+.jarvis-ball ul li[data-ball-style="6"] a {
+    background-position: -180px -10px;
+}
+
+.jarvis-ball:hover ul li:nth-child(1) a {
+    left: -23px;
+    bottom: -36px;
+}
+
+.jarvis-ball:hover ul li:nth-child(2) a {
+    left: -42px;
+    bottom: 2px;
+}
+
+.jarvis-ball:hover ul li:nth-child(3) a {
+    left: -16px;
+    bottom: 43px;
+}
+
+.jarvis-ball:hover ul li:nth-child(4) a {
+    left: 30px;
+    top: -32px;
+}
+
+.jarvis-ball:hover ul li:nth-child(5) a {
+    left: 50px;
+    top: 5px;
+}
+
+.jarvis-ball:hover ul li:nth-child(6) a {
+    left: 30px;
+    top: 40px;
+}
+
+.jarvis-ball ul li span {
+    background: #4a90e2;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 13px;
+    min-width: 20px;
+    height: 20px;
+}
+
+.jarvis-ball ul li a:hover, .jarvis-ball ul li.active a {
+    transform: scale(1.2, 1.2);
+}
+
+.jarvis-ball:hover ul li a {
+    visibility: visible;
+    animation: smallBallAnimation 2s;
+}
+
+/*********************
+ball content wrapper
+**********************/
+.jarvis-ball-container {
+    height: auto;
+    background: #fff;
+    width: 340px;
+    position: relative;
+    box-shadow: 4px 19px 88px #dedede;
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    z-index: 9999999999;
+    border-radius: 5px;
+    left: -24px;
+    bottom: -10px;
+}
+
+.slimScrollDiv {
+    padding-right: 5px !important;
+}
+
+.jarvis-ball-container:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 30px solid #ffffff;
+
+}
+
+.jarvis-ball-inner {
+    max-height: 60vh;
+    min-height: 360px;
+    padding-right: -6px;
+}
+
+/***************** Pinball End ******************/
+
+/************************************
+RECENT VIEWED PRODUCT
+.jarvis_recently_viewed_products
+*********************************/
+
+.jarvis_recently_viewed_products ul.jarvis_product_list {
+    margin: 0;
+    padding: 0;
+}
+
+.jarvis_recently_viewed_products ul.jarvis_product_list li.jarvis_product {
+    list-style: none;
+    margin: 2px 0;
+    padding: 5px 0 5px 55px;
+    border-bottom: 1px dotted #dce2e6;
+    clear: both;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.jarvis_recently_viewed_products ul.jarvis_product_list li.jarvis_product img {
+    width: 45px;
+    position: absolute;
+    left: 0;
+    height: auto;
+    box-shadow: none;
+    margin: 0 10px 0 0 !important;
+    border-bottom: 2px solid #00a2ca;
+    border-radius: 0 0 5px 5px;
+}
+
+.jarvis_recently_viewed_products h3.jarvis_product_title {
+    padding: 0;
+    margin: 2px 39px 4px 0;
+    width: 8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;
+}
+
+.jarvis_recently_viewed_products ul.jarvis_product_list li.jarvis_product .price {
+    text-align: left;
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00a2ca;
+}
+
+.jarvis_recently_viewed_products .onsale, ul.jarvis_product_list li.jarvis_product .star-rating, .price del {
+    display: none;
+}
+
+.jarvis_recently_viewed_products ul.jarvis_product_list li.jarvis_product a.jarvis-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+}
+
+a.jarvis-button {
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    line-height: 22px;
+    color: transparent;
+    background: #009bc1 url("../images/icon-img.png") no-repeat;
+    background-position: -3px -31px;
+    text-decoration: none;
+    transition: background 0.5s ease;
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+a.jarvis-button.added, a.jarvis-button.jarvis-button-checkout {
+    background-position: -4px -1px;
+}
+
+a.jarvis-button:hover {
+    background-color: #009bc1;
+}
+
+.jarvis_recently_viewed_products ul.jarvis_product_list li.jarvis_product a.added_to_cart {
+    display: none;
+}
+
+/************************************
+PRODUCT SEARCH
+.woocommerce-jarvis
+*********************************/
+
+.woocommerce-jarvis {
+    position: relative;
+    transition: 0.3s;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+.woocommerce-jarvis .jarvis-title {
+    display: block;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: .8em;
+}
+
+.woocommerce-jarvis .jarvis-phrase {
+    /* position: relative;*/
+}
+
+.woocommerce-jarvis .jarvis-find {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.41);
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    line-height: inherit;
+    vertical-align: baseline;
+    display: inline-block;
+    height: 1.4em;
+}
+
+.woocommerce-jarvis .jarvis-reset {
+    display: none;
+}
+
+.woocommerce-jarvis .jarvis-field {
+    /*position: relative;*/
+    outline: none;
+    white-space: nowrap;
+    vertical-align: baseline;
+    display: inline-block !important;
+    color: #004b5d;
+}
+
+.woocommerce-jarvis .jarvis-field.jarvis-field-select {
+    cursor: pointer;
+}
+
+.woocommerce-jarvis .jarvis-field.jarvis-field-select select {
+    background: none;
+    opacity: .05;
+    font-size: inherit;
+    left: -3px;
+    width: auto;
+    text-align: center;
+    color: inherit;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(255, 0, 0, 0.07);
+    box-shadow: inset 0 0 1px rgba(255, 0, 0, 0.58);
+    font-size: inherit;
+    letter-spacing: inherit;
+}
+
+.woocommerce-jarvis .jarvis-field.jarvis-field-input input {
+    background: none;
+    font-size: inherit;
+    width: 2.4em;
+    text-align: center;
+    color: inherit;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-transform: inherit;
+    display: inline-block !important;
+    vertical-align: baseline;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.44);
+    line-height: inherit;
+}
+
+.woocommerce-jarvis .jarvis-field.jarvis-field-input .jarvis-field-label {
+    cursor: pointer;
+    line-height: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+    font-style: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    display: inline-block !important;
+    vertical-align: baseline;
+}
+
+.woocommerce-jarvis .jarvis-field > a {
+    position: relative;
+    text-decoration: none;
+    display: inline-block !important;
+    vertical-align: middle;
+    color: #004b5d;
+    border-bottom: 1px dotted #004b5d;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.woocommerce-jarvis .jarvis-field ul {
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    /* width: 6em; */
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 2px;
+    z-index: 100000;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.09);
+    padding: 0;
+    margin: 0;
+}
+
+.woocommerce-jarvis .jarvis-field ul li {
+    display: block;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.woocommerce-jarvis .jarvis-field ul li a {
+    background-color: #F5F5F5;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 24px;
+    padding: 0 14px;
+    white-space: nowrap;
+    color: #6c6c6c;
+    text-decoration: none;
+}
+
+.woocommerce-jarvis .jarvis-field ul li a:hover {
+    background-color: #e3e3e3;
+}
+
+.woocommerce-jarvis .jarvis-field ul li.selected a {
+    background-color: #e3e3e3;
+    color: #000000;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    margin: -1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.woocommerce-jarvis .jarvis-field ul li:last-child {
+    border-bottom: 0;
+}
+
+.woocommerce-jarvis .jarvis-field select {
+    position: absolute;
+    left: 0px;
+    top: -43px;
+}
+
+.woocommerce-jarvis .jarvis-field .jarvis-transition-step-1 {
+    top: -11px;
+    opacity: 0;
+}
+
+.woocommerce-jarvis .jarvis-field .jarvis-transition-step-2 {
+    top: 11px;
+    opacity: 0;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-none {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-none .jarvis-phrase {
+    display: inline;
+    clear: both;
+    padding: 0;
+    float: none;
+    margin: 0;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-none .jarvis-title {
+    display: inline-block;
+}
+
+.first_row {
+    text-align: center;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-themed {
+    border-radius: 1px;
+    letter-spacing: -.02em;
+    text-align: center;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-themed .jarvis-title {
+    border-radius: 1px 1px 0 0;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-themed .jarvis-phrase {
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.jarvis-inner {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    /*min-height: 260px;*/
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-themed .jarvis-find {
+    padding: 0 14px 0 0;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-title {
+    color: white;
+    border-radius: 2px 2px 0 0;
+    background: black;
+    padding: 1px 10px 0px;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-phrase {
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-field {
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-field > a {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.44);
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-find, .woocommerce-jarvis.woocommerce-jarvis-light .jarvis-find-ajax {
+    font-size: 20px;
+    line-height: inherit;
+    padding: 5px 15px;
+    background: #00a2ca;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    vertical-align: baseline;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-find:hover, .woocommerce-jarvis.woocommerce-jarvis-light .jarvis-find-ajax:hover {
+    background: #0083a3;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark {
+    background-color: #000;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    color: #F1F1F1;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-title {
+    color: black;
+    background: white;
+    padding: 1px 10px 0px;
+    border: 1px solid rgb(241, 241, 241);
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-phrase {
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-field {
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-field > a {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-find {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.29);
+    background: url(../images/light-arrow.png) no-repeat 100% 57%;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-field.jarvis-field-input input {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean {
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean .jarvis-title {
+    color: white;
+    border-radius: 2px 2px 0 0;
+    background: black;
+    padding: 1px 10px 0px;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean .jarvis-phrase {
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean .jarvis-field {
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean .jarvis-field > a {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.44);
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean .jarvis-find {
+    background: url(../images/dark-arrow.png) no-repeat 100% 57%;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean .jarvis-field.jarvis-field-input input {
+}
+
+.jarvis-tab-loader {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/**************************************
+ CART PRODUCT
+ .qcld_cart-products
+**************************************/
+.qcld_cart-products {
+    text-align: left;
+}
+
+.qcld_cart_prod_table {
+    height: 276px;
+    background-color: #fff;
+    /*border-radius: 20px;*/
+    overflow: hidden;
+}
+
+.qcld_cart-products .qcld_cart_head {
+    background-color: #00a2ca;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.qcld_cart_prod_table_body {
+    /*height: 230px;*/
+    overflow: hidden;
+    /*margin: 0 5px 10px 0;*/
+    /*padding: 20px;*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=0, Color=#ffffff)"; /*IE 8*/
+    -moz-box-shadow: inset 0px -30px 5px #ffffff; /*FF 3.5+*/
+    -webkit-box-shadow: inset 0px -30px 5px #ffffff; /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: inset 0px -30px 5px #ffffff; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=0, Color=#ffffff); /*IE 5.5-7*/
+    position: relative;
+}
+
+.qcld_no_cartprods {
+    text-align: center;
+    margin: 85px 0 0;
+}
+
+.qcld_cart_head span {
+    display: inline-block;
+    padding: 6px;
+    box-sizing: border-box; /*text-align: center;*/
+}
+
+.qcld_cart_head span.qcld_cart_title {
+    width: 50%;
+}
+
+.qcld_cart_head span.qcld_cart_price, .qcld_cart-products .cartPrice {
+    width: 25%;
+}
+
+.qcld_cart_head span.qcld_cart_qty, .qcld_cart-products td.qcld_cart_qty {
+    width: 20%;
+    text-align: center;
+}
+
+.qcld_cart-products td {
+    padding: 4px 2px;
+    font-size: 12px !important;
+    line-height: 18px;
+}
+
+.qcld_cart-products img {
+    max-height: 30px;
+    width: auto;
+    border-bottom: 2px solid #00738f;
+    border-right: 1px solid #b7d4dc;
+    border-radius: 0 0 5px 5px;
+}
+
+.qcld_checkout_buttons {
+    height: 56px;
+    margin-top: -20px;
+    text-align: right;
+}
+
+/**********************************
+Recommended Product
+**************************/
+.action--open {
+    background: #008eb1;
+}
+
+.action--close {
+    color: #008eb1;
+}
+
+/**********************************
+Featured Product
+**************************/
+.jarvis-featured-products ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.jarvis-featured-products ul li {
+    display: inline-table;
+    box-sizing: border-box;
+    margin: 10px 2%;
+    max-width: 46%;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    position: relative;
+}
+
+.jarvis-featured-products ul li img {
+    display: block;
+}
+
+.jarvis-featured-products ul li h3.jarvis_product_title {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.jarvis-featured-products ul li div.price > .amount {
+    font-size: 12px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.jarvis-product-summary {
+    display: none;
+}
+
+.jarvis-featured-products ul li .jarvis-product-summary .jarvis-button {
+    display: none;
+}
+
+.jarvis-featured-products ul li:hover .jarvis-product-summary .jarvis-button {
+    display: inline-table;
+}
+
+.jarvis-featured-products ul li:hover { /*padding-bottom: 60px;*/
+    /*background: #ffffff;*/
+}
+
+.jarvis-featured-products ul li:hover .jarvis-product-summary {
+    color: #ffffff;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: all 0.5s linear;
+    overflow: hidden;
+}
+
+.jarvis-featured-products ul li .jarvis-product-summary .jarvis-product-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+.jarvis-featured-products ul li .jarvis-product-summary .jarvis-product-table .jarvis-product-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 110px;
+}
+
+.jarvis-featured-products ul li a {
+    color: #ffffff;
+}
+
+.jarvis-featured-products ul li a.added_to_cart {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 10px;
+}
+
+/******************************
+JARVIS SUPPORT FORM
+******************************/
+.jarvis-support-form-container > div {
+    display: block;
+    padding: 5px 0;
+}
+
+.jarvis-support-form-container > div input, .jarvis-support-form-container div textarea {
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid #cccccc;
+}
+.jarvis-support-form-container > div input:focus, .jarvis-support-form-container div textarea:focus {
+ outline: none;
+    border: 1px solid #cccccc;
+}
+
+.jarvis-support-form-container > div textarea {
+    height: auto;
+    font-family: inherit;
+    font-style: normal;
+}
+
+.jarvis-support-form-container > div.jarvis-support-form-captcha {
+    font-size: 0;
+    line-height: 0;
+}
+
+.jarvis-support-form-container .jarvis-captcha-view, .jarvis-support-form-container .jarvis-captcha-fields {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.jarvis-support-form-container .jarvis-captcha-view {
+    width: 30%;
+    font-size: 20px;
+    line-height: normal;
+
+}
+
+.jarvis-support-form-container .jarvis-captcha-view #jarvis-captcha-code{
+    -webkit-user-select: none; /* Chrome, Opera, Safari */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+    /*padding: 3px 10px;*/
+    padding: 3px 5px 3px 5px;
+    background: linear-gradient(#cccccc, #F5F5F5);
+}
+
+.jarvis-support-form-container .jarvis-captcha-view button#javis-captcha-refresh {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -6px;
+    background: url("../images/captch-refresh.png") no-repeat center;
+    border: none;
+    font-size: 0;
+    right: -32px;
+    cursor: pointer;
+}
+.jarvis-support-form-container .jarvis-captcha-view button#javis-captcha-refresh:hover{
+    opacity: 0.9;
+}
+
+.jarvis-support-form-container .jarvis-captcha-fields {
+    width: 70%;
+    font-size: 14px;
+    line-height: normal;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.jarvis-support-form-container > div.jarvis-support-form-submit button {
+    display: block;
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-size: 18px;
+    border: 1px solid;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+.jarvis-support-form-container > div button:hover {
+    background-color: #3466a0;
+}
+
+#jarvis-support-form-validation p {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 2px 0;
+    padding: 2px 5px;
+    border: 1px solid #F5F5F5;
+}
+
+.jarvis_title {
+    font-size: 16px !important;
+    color: #010101 !important;
+    margin: 10px 0;
+}
+
+.jarvis-ball span {
+    width: 20px;
+    height: 20px;
+    background: #2eaad0;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -18px;
+    bottom: -12px;
+}
+
+.jarvis-ball:hover > span {
+    display: none;
+}
+
+.jarvis-ball-inner .animated.bounce {
+    z-index: 9999;
+    position: relative;
+}
+.jarvis-featured-products ul li {
+    z-index: 0;
+}
+
+
+.jarvis-support-form-container > div input, .jarvis-support-form-container div textarea {
+    width: 100%;
+    max-width: 285px;
+}
+input#javis-captcha {
+    width: 100%;
+    max-width: 162px;
+}
+.jarvis-featured-products ul li {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+}
+
+.jarvis-featured-products ul li img {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+}
+.jarvis-support-form-container {
+    padding: 0 22px 0 0;
+}
+.jarvis-ball {
+    border: 6px solid #9E9E9E;
+}
+div#jarvis-ball img {
+    margin: -7px 0 0 -7px;
+}
+div#jarvis-ball img {
+    margin: 0;
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .jarvis-ball {
+        bottom: 20px;
+        right: 15px;
+    }
+
+    .jarvis-ball-container {
+        right: 30px;
+        bottom: 30px;
+    }
+
+}

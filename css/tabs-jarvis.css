@@ -1,0 +1,180 @@
+/* Default tab style */
+.tabs-jarvis {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+/* Nav */
+.tabs-jarvis nav {
+    width: 25%;
+    display: block;
+    float: left;
+
+}
+
+.tabs-jarvis nav ul {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.tabs-jarvis nav ul li {
+    position: relative;
+    border-bottom: 1px solid #f9f9f9;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    text-align: left;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.tabs-jarvis nav a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2.5;
+    text-decoration: none;
+    /*padding: 10px 20px;*/
+}
+
+.tabs-jarvis nav a span {
+    vertical-align: middle;
+    font-size: 0.75em;
+}
+
+.tabs-jarvis nav li.tab-current a {
+    color: #74777b;
+}
+
+.tabs-jarvis nav a:focus {
+    outline: none;
+}
+
+/* Content */
+.content-wrap {
+    position: relative;
+    width: 75%;
+    display: block;
+    float: left;
+}
+
+.content-wrap section {
+    display: none;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 1200px; /*text-align: center;*/
+}
+
+.content-wrap section.content-current {
+    display: block;
+}
+
+/*.content-wrap section p {*/
+/*margin: 0;*/
+/*padding: 0.75em 0;*/
+/*color: rgba(40,44,42,0.05);*/
+/*font-weight: 900;*/
+/*font-size: 4em;*/
+/*line-height: 1;*/
+/*}*/
+/* Fallback */
+.no-js .content-wrap section {
+    display: block;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.no-flexbox nav ul {
+    display: block;
+}
+
+.no-flexbox nav ul li {
+    min-width: 15%;
+    display: inline-block;
+}
+
+/*****************************/
+/* Flip */
+/*****************************/
+
+.tabs-jarvis-style-flip {
+    max-width: 1200px;
+}
+
+.tabs-jarvis-style-flip nav a {
+    padding: 0.5em 1em;
+    color: #33B0D9;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+
+.tabs-jarvis-style-flip nav a:hover, .tabs-jarvis-style-flip nav a:focus, .tabs-jarvis-style-flip nav a:active, .tabs-jarvis-style-flip nav li.tab-current a {
+    color: #74777b;
+    outline: none;
+    box-shadow: none;
+}
+
+.tabs-jarvis-style-flip nav a span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.625em;
+}
+
+.tabs-jarvis-style-flip nav a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-perspective-origin: 50% 100%;
+    perspective-origin: 50% 100%;
+}
+
+.tabs-jarvis-style-flip nav li.tab-current a::after {
+    background-color: #fff;
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, 0deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, 0deg);
+}
+
+.tabs-jarvis-style-flip .content-wrap {
+    background: #fff;
+}
+
+@media screen and (max-width: 58em) {
+    .tabs-jarvis nav a.icon span {
+        display: none;
+    }
+
+    .tabs-jarvis nav a:before {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .tabs-jarvis-style-flip nav a {
+        padding: 0;
+        line-height: 2;
+    }
+
+}

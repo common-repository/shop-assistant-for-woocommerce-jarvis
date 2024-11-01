@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*sell message start*/
+#message-purchased { background: #F4F4F4; border: 0 none; box-shadow: 2px 2px 35px 1px rgba(0,0,0,0.35); border-radius: 10px; bottom: 20px;  display: none; font-family: tahoma, sans-serif; left: 20px; padding: 0; position: fixed; right: auto !important; text-align: left; top: auto !important; width: auto; z-index: 99999; }
+#message-purchased.bottom_right { left: auto !important; right: 20px !important; }
+#message-purchased.top_right { left: auto !important; right: 20px !important; top: 20px !important; bottom: auto !important; }
+#message-purchased.top_left { left: auto !important; top: 20px !important; bottom: auto !important; }
+#message-purchased img { cursor: pointer; float: left; max-height: 85px; max-width: 120px; width: auto; }
+#message-purchased.img-right img { cursor: pointer; float: right; max-height: 85px; max-width: 120px; width: auto; }
+#message-purchased p { float: left; font-size: 13px; line-height: 20px; margin: 0 0 0 13px; padding: 10px 10px 0 0; width: auto; }
+#message-purchased p a { color: #000; display: block; font-size: 15px; font-weight: 700; }
+#message-purchased p a:hover { color: #000; }
+#message-purchased p small { display: block; font-size: 10px; margin-bottom: 8px; }
+#message-purchased { padding-right: 25px; }
+#message-purchased.img-right { padding: 0; }
+#message-purchased #notify-close { background: rgba(0, 0, 0, 0) url("../images/close.png") repeat scroll 0 0 / cover; cursor: pointer; height: 16px; position: absolute; right: 10px; top: 10px; width: 16px; }
+#message-purchased { background-color: #ffffff; color: #020202 ; }
+#message-purchased a { color: #020202; }
+
+@media screen and (max-width: 767px) {
+#message-purchased { bottom: 0 !important; box-sizing: border-box; left: 0 !important; top: auto !important; width: 100%; padding: 0; }
+#message-purchased img { max-width: 20%; }
+#message-purchased p { font-size: 11px; width: 70%; }
+#message-purchased p a { font-size: 13px; }
+#message-purchased p small { margin-bottom: 0; }
+}
+ @keyframes nFadeIn {
+ 0% {
+ opacity: 0;
+ transform: translate3d(0px, 100%, 0px);
+}
+ 100% {
+ opacity: 1;
+ transform: none;
+}
+}
+#message-purchased.fade-in { animation-duration: 1s; animation-fill-mode: both; animation-name: nFadeIn; opacity: 0; }
+ @keyframes nFadeOut {
+ 0% {
+ opacity: 1;
+}
+ 100% {
+ bottom: 0;
+ opacity: 0;
+ transform: translate3d(0px, 100%, 0px);
+}
+}
+#message-purchased.fade-out { animation-duration: 1s; animation-fill-mode: both; animation-name: nFadeOut; opacity: 1; }
+#woocommerce-notification-audio { display: none; }
+
+/*sell message end*/

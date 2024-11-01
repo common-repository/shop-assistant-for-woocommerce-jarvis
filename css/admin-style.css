@@ -1,0 +1,601 @@
+/* -- Tabs Styling -- */
+.jarvis-wrap .cxsc-tabs {
+    border: 0 none;
+    margin: 0 10px -1px 0;
+}
+
+.jarvis-wrap .cxsc-tab {
+    background-color: #F7F7F7;
+    border: 1px solid #DFDFDF;
+    border-radius: 3px 3px 0 0;
+    color: #AAAAAA;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    line-height: 20px;
+    outline: none !important;
+    padding: 6px 15px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.jarvis-wrap .cxsc-last-tab {
+    float: right;
+    font-size: 11px;
+    margin: 8px 0 0;
+    padding: 2px 12px;
+}
+
+.jarvis-wrap .cxsc-tab-selected {
+    background-color: #FFFFFF !important;
+    border-bottom: 1px solid #FFFFFF;
+    color: #111111 !important;
+}
+
+/* -- Settings Block Styling -- */
+.jarvis-wrap .cxsc-settings-blocks {
+    margin: 0 10px 0 0; /*min-height: 200px; !* width: 95%; *!*//*float: left;*/
+}
+
+.jarvis-wrap .cxsc-settings-block {
+}
+
+.jarvis-wrap .cxsc-settings-inner-block {
+    padding: 10px;
+}
+
+.jarvis-wrap .cxsc-settings-block fieldset {
+    background: rgb(244, 244, 244);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.jarvis-wrap .repeatable {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.jarvis-wrap .field-group {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07); /*padding: 14px 19px 7px;*/
+    clear: both;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background: white;
+    position: relative;
+}
+
+.jarvis-wrap .field-group:last-child {
+    border-bottom: 0;
+}
+
+.jarvis-wrap .field-group label {
+    position: absolute;
+    font-size: 10px;
+    text-transform: uppercase;
+    top: 41%;
+    line-height: 17px;
+    background: rgb(148, 148, 148);
+    border: aliceblue;
+    text-align: center;
+    padding: 0 7px;
+    border-radius: 2px;
+    color: white;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.09);
+    right: 100%;
+    white-space: nowrap;
+    margin-right: 0px;
+    margin-top: -9px;
+    display: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.jarvis-wrap .field-group label .marker {
+    position: absolute;
+    width: 5px;
+    height: 11px;
+    right: -5px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.jarvis-wrap .field-group label .marker-1 {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 5px solid rgba(0, 0, 0, 0.31);
+    position: absolute;
+    margin-top: 1px;
+    top: 1px;
+    left: 0;
+}
+
+.jarvis-wrap .field-group label .marker-2 {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 5px solid rgb(153, 153, 153);
+    position: absolute;
+    margin-top: 1px;
+    top: 0;
+    left: 0;
+}
+
+.jarvis-wrap .field-group-set .number-set {
+    position: relative;
+    white-space: nowrap;
+}
+
+.jarvis-wrap .field-group .action-buttons {
+    display: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    width: 16px;
+    line-height: 16px;
+    height: 16px;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.18);
+    border: 0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15) inset;
+    outline: none;
+    position: absolute;
+    left: 100%;
+    margin-left: -26px;
+    top: 50%;
+    margin-top: -8px;
+    text-indent: -999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.jarvis-wrap .field-group .action-buttons.delete {
+    background: url(../images/admin-cross.png) no-repeat 3px 3px rgb(204, 189, 201);
+    top: 37%;
+}
+
+.jarvis-wrap .field-group .action-buttons.reorder {
+    background: url(../images/admin-reorder.png) no-repeat 2px 2px rgb(204, 189, 201);
+    top: 64%;
+}
+
+.jarvis-wrap .field-group .action-buttons:hover {
+    background-color: rgb(111, 111, 111);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.41) inset;
+}
+
+.jarvis-wrap .field-group:hover .action-buttons {
+    display: block;
+}
+
+.jarvis-wrap .field-group-set {
+    display: inline-block;
+    padding: 0 15px 8px 0;
+    position: relative;
+    white-space: nowrap;
+}
+
+.jarvis-wrap .field-group-set:hover label {
+    display: block;
+}
+
+.jarvis-wrap .form-group {
+    /*padding: 12px 14px;*/
+}
+
+.jarvis-wrap .jarvis_sentence_builder input[type="text"] {
+    width: 200px;
+}
+
+.jarvis-wrap .jarvis_sentence_builder select {
+    width: 200px;
+}
+
+.jarvis-wrap .jarvis_sentence_builder .number-set input {
+    width: 97px;
+}
+
+.jarvis-wrap {
+    margin: 20px 15px 0 0;
+}
+
+.jarvis-wrap .icon32 {
+    float: left;
+    height: 34px;
+    margin: 7px 8px 0 3px;
+    width: 36px;
+    background-image: url(../images/email-cart.png) !important;
+}
+
+.jarvis-wrap h2 {
+    font-size: 23px !important;
+    color: #ffffff;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.qc_get_pro {
+    text-align: right;
+    float: right;
+}
+
+.qc_get_pro p a {
+    text-decoration: none;
+    color: white;
+}
+
+.qc_get_pro h2 a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.jarvis-wrap #poststuff {
+    padding-top: 0;
+    min-width: 845px !important;
+}
+
+.jarvis-wrap table.settings-table .header-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.jarvis-wrap table.settings-table .header-row .header-help {
+    font-size: 8px;
+    margin: 0 2px;
+    position: relative;
+    top: -1px;
+    opacity: .5;
+    cursor: pointer;
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+}
+
+.jarvis-wrap table.settings-table .header-column {
+    float: left;
+    width: 230px;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.jarvis-wrap table.settings-table .header-column.header-column-1 {
+}
+
+.jarvis-wrap table.settings-table .header-column.header-column-2 {
+}
+
+.jarvis-wrap table.settings-table .header-column.header-column-3 {
+}
+
+.jarvis-wrap .postbox {
+    margin: 22px 0 28px;
+    padding: 50px;
+}
+
+.jarvis-wrap .postbox .handlediv {
+    margin-top: 2px;
+    margin-right: 3px;
+}
+
+.jarvis-wrap .hndle-more {
+    font-size: 11px;
+    font-family: sans-serif;
+    color: rgb(143, 143, 143);
+    padding: 0 4px;
+}
+
+.jarvis-wrap h3 {
+    padding: 8px 16px 8px !important;
+    line-height: 1.3em !important;
+    font-size: 15px;
+}
+
+.jarvis-wrap table.settings-table {
+    border: 0 none;
+    width: 100%;
+}
+
+.jarvis-wrap table.settings-table tbody tr td {
+    padding: 19px 15px;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 0 none;
+}
+
+.jarvis-wrap table.settings-table tbody tr td.label {
+    width: 24%;
+    vertical-align: top;
+    border-top: 1px solid #1px solid #EEEEEE;
+    padding-right: 7%;
+}
+
+.jarvis-wrap table.settings-table tbody tr td.label p {
+    display: block;
+    font-size: 12px;
+    padding: 0 !important;
+    margin: 3px 0 0 !important;
+    font-style: normal;
+    line-height: 16px;
+    color: #899194;
+}
+
+.jarvis-wrap table.settings-table tbody tr td.label label {
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 8px;
+    color: #333;
+    font-size: 12px;
+}
+
+.jarvis-wrap table.settings-table > tbody > tr:first-child > td, .jarvis-wrap table.settings-table > tbody > tr:first-child > td.label {
+    border-top: 0 none;
+}
+
+.jarvis-wrap table.settings-table .second-block {
+    width: 60%;
+}
+
+.jarvis-wrap table.settings-table select, .jarvis-wrap table.settings-table input[type="text"], .jarvis-wrap table.settings-table textarea {
+    padding: 7px 9px;
+    font-size: 1.1em;
+    height: auto;
+    line-height: 1.5em;
+    line-height: 1.3em;
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.jarvis-wrap table.settings-table input[readonly] {
+    background-color: rgb(247, 247, 247);
+}
+
+.jarvis-wrap table.settings-table input.submit-button {
+    line-height: 30px;
+    height: 31px;
+    padding: 0 10px;
+}
+
+.jarvis-wrap table.settings-table .tips {
+    color: inherit;
+    font-weight: normal;
+}
+
+.jarvis-wrap table.settings-table .sub-field {
+    margin: 0 14px 14px 0;
+}
+
+.jarvis-wrap table.settings-table .sub-field label {
+    margin: 0 0 0 7px;
+}
+
+.jarvis-wrap table.settings-table .sub-field label span {
+    color: #899194;
+    margin: 0 0 0 10px;
+    font-size: 12px;
+}
+
+.jarvis-wrap table.settings-table .phrase-example-holder {
+    padding: 17px 22px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin: 7px 0 31px;
+    font-size: 20px;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.04);
+    background: white; /*max-width: 655px;*/
+    line-height: 1.4em;
+    color: rgb(88, 88, 88);
+    position: relative;
+}
+
+.phrase-example-holder .phrase-example {
+    font-size: 20px;
+    color: rgb(88, 88, 88);
+}
+
+.phrase-example-holder .phrase-example-none {
+    font-size: 12px;
+    color: rgb(136, 136, 136);
+}
+
+.phrase-example-holder .phrase-example-filter {
+    color: rgb(160, 160, 160);
+    border-bottom: 1px dotted rgb(221, 179, 211);
+}
+
+.jarvis-wrap table.settings-table .phrase-example-holder .phrase-example-button {
+    border-bottom: 1px dotted rgb(180, 172, 178);
+    font-style: italic;
+}
+
+.phrase-example-holder .help-tip {
+    color: red;
+    position: absolute;
+    right: 0;
+    display: none;
+    font-size: 11px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    color: grey;
+    bottom: -29px;
+}
+
+.phrase-example-holder:hover .help-tip {
+    display: block;
+}
+
+.jarvis-wrap table.settings-table .ui-sortable-helper {
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid lightGrey;
+}
+
+.jarvis-wrap .qc-jarvis-hide {
+    display: none;
+}
+
+input[type="text"].shop-jarvis-button-text {
+    display: block;
+    width: 700px !important;
+}
+
+/*CHECKBOX*/
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+form {
+    width: 400px;
+}
+
+legend {
+    font-size: 16px;
+    font-family: monospace;
+}
+
+fieldset {
+    padding: 15px;
+}
+
+input[type=checkbox] {
+    opacity: 0;
+    float: left;
+}
+
+input[type=checkbox] + label {
+    margin: 0 0 0 20px;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    float: left;
+}
+
+input[type=checkbox] + label ~ label {
+    margin: 0 0 0 40px;
+}
+
+input[type=checkbox] + label::before {
+    content: ' ';
+    position: absolute;
+    left: -35px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: white;
+    border: 1px solid #A9A9A9;
+}
+
+input[type=checkbox] + label::after {
+    content: ' ';
+    position: absolute;
+    left: -35px;
+    top: -3px;
+    width: 23px;
+    height: 23px;
+    display: block;
+    z-index: 1;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE4MS4yIDI3MyAxNyAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxODEuMiAyNzMgMTcgMTYiPjxwYXRoIGQ9Ik0tMzA2LjMgNTEuMmwtMTEzLTExM2MtOC42LTguNi0yNC04LjYtMzQuMyAwbC01MDYuOSA1MDYuOS0yMTIuNC0yMTIuNGMtOC42LTguNi0yNC04LjYtMzQuMyAwbC0xMTMgMTEzYy04LjYgOC42LTguNiAyNCAwIDM0LjNsMjMxLjIgMjMxLjIgMTEzIDExM2M4LjYgOC42IDI0IDguNiAzNC4zIDBsMTEzLTExMyA1MjQtNTI0YzctMTAuMyA3LTI1LjctMS42LTM2eiIvPjxwYXRoIGZpbGw9IiMzNzM3MzciIGQ9Ik0xOTcuNiAyNzcuMmwtMS42LTEuNmMtLjEtLjEtLjMtLjEtLjUgMGwtNy40IDcuNC0zLjEtMy4xYy0uMS0uMS0uMy0uMS0uNSAwbC0xLjYgMS42Yy0uMS4xLS4xLjMgMCAuNWwzLjMgMy4zIDEuNiAxLjZjLjEuMS4zLjEuNSAwbDEuNi0xLjYgNy42LTcuNmMuMy0uMS4zLS4zLjEtLjV6Ii8+PHBhdGggZD0iTTExODcuMSAxNDMuN2wtNTYuNS01Ni41Yy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTI1My41IDI1My41LTEwNi4yLTEwNi4yYy01LjEtNS4xLTEyLTUuMS0xNy4xIDBsLTU2LjUgNTYuNWMtNS4xIDUuMS01LjEgMTIgMCAxNy4xbDExNC43IDExNC43IDU2LjUgNTYuNWM1LjEgNS4xIDEyIDUuMSAxNy4xIDBsNTYuNS01Ni41IDI2Mi0yNjJjNS4yLTMuNCA1LjItMTIgLjEtMTcuMXpNMTYzNC4xIDE2OS40bC0zNy43LTM3LjdjLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0xNjkuNSAxNjkuNS03MC4yLTcxLjljLTMuNC0zLjQtOC42LTMuNC0xMiAwbC0zNy43IDM3LjdjLTMuNCAzLjQtMy40IDguNiAwIDEybDc3LjEgNzcuMSAzNy43IDM3LjdjMy40IDMuNCA4LjYgMy40IDEyIDBsMzcuNy0zNy43IDE3NC43LTE3Ni40YzEuNi0xLjcgMS42LTYuOS0uMS0xMC4zeiIvPjwvc3ZnPg==') no-repeat center center;
+    -ms-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    transition: all .3s ease;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+input[type=checkbox]:checked + label::after {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*ICON CSS*/
+
+ul.radio-list {
+    margin: 0;
+    padding: 0;
+}
+
+ul.radio-list li {
+    width: 15%;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+ul.radio-list li img, ul.radio-list li input {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+ul.radio-list li input[type=radio] {
+    background: #E3E4E4;
+}
+
+ul.radio-list li img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #c7dbec;
+    width: 65px;
+    display: block;
+    margin: 5px auto;
+}
+
+/*container style css after adding tab*/
+
+.custom-global-css {
+    min-height: 384px;
+}
+
+.form-container {
+    box-shadow: 0 6px 18px 8px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.form-container {
+    background-color: #000000;
+    border: 1px solid #cccccc !important;
+    padding: 50px;
+}
+
+.form-container h2 {
+    color: white !important;
+    display: inline-block;
+}
+
+.qc-opt-description {
+    font-weight: normal;
+}
+
+.qc-opt-title-font {
+    font-weight: normal;
+    font-size: 14px !important;
+}
+
+.qc-opt-dcs-font {
+    font-size: 13px !important;
+}
+
+.input-sm {
+    width: 50px !important;
+}
+
+.thumbnail.theme_prev {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.ge-canvas {
+    padding: 0 15px;
+}
+

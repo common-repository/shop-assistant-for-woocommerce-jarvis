@@ -1,0 +1,1182 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Shop Assistant JARVIS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-28 08:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2\n"
+"X-Domain: jarvis"
+
+#: jarvis-woo.php:2776
+#, php-format
+msgid "%1$s  %2$s   %3$s"
+msgstr ""
+
+#: jarvis-woo.php:2439
+#, php-format
+msgid ""
+"%1$s JARVIS for WooCommerce is inactive %2$s This version of JARVIS requires "
+"WooCommerce %3$s or newer. For more information about our WooCommerce "
+"version support %4$s click here %5$s."
+msgstr ""
+
+#: jarvis-woo.php:2423
+#, php-format
+msgid ""
+"%1$s JARVIS for WooCommerce REQUIRES WooCommerce %2$s %3$s WooCommerce %4$s "
+"must be active for JARVIS to work. Please install & activate WooCommerce."
+msgstr ""
+
+#: jarvis-woo.php:836 jarvis-woo.php:840
+msgid "0"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:373
+msgid "Activate"
+msgstr ""
+
+#: jarvis-woo.php:815
+msgid "Add A Custom Quickball on JARVIS"
+msgstr ""
+
+#: jarvis-woo.php:1479
+msgid "Add More"
+msgstr ""
+
+#: functions.php:59
+msgid "Add New Term"
+msgstr ""
+
+#: jarvis-woo.php:1619
+msgid "Add to cart"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:83
+msgid ""
+"All our Pro Version users get Premium, Guaranteed Quick, One on One Priority "
+"Support."
+msgstr ""
+
+#: jarvis-woo.php:966
+msgid "All Pages"
+msgstr ""
+
+#: classes/shortcodes/class-shortcode-qc-jarvis.php:132
+#: classes/shortcodes/class-shortcode-qc-jarvis.php:178
+#: classes/shortcodes/class-shortcode-qc-jarvis.php:250
+#: classes/shortcodes/class-widget-shortcode.php:131
+#: classes/shortcodes/class-widget-shortcode.php:170
+#: classes/shortcodes/class-widget-shortcode.php:224
+msgid "Any"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:209
+msgid ""
+"Before you deactivate the plugin, would you quickly give us your reason for "
+"doing so? Only the option you selected in this form will be emailed to us."
+msgstr ""
+
+#: jarvis-woo.php:544
+msgid "bounce"
+msgstr ""
+
+#: jarvis-woo.php:556
+msgid "bounceIn"
+msgstr ""
+
+#: jarvis-woo.php:557
+msgid "bounceInDown"
+msgstr ""
+
+#: jarvis-woo.php:558
+msgid "bounceInLeft"
+msgstr ""
+
+#: jarvis-woo.php:559
+msgid "bounceInRight"
+msgstr ""
+
+#: jarvis-woo.php:560
+msgid "bounceInUp"
+msgstr ""
+
+#: jarvis-woo.php:564
+msgid "bounceOut"
+msgstr ""
+
+#: jarvis-woo.php:565
+msgid "bounceOutDown"
+msgstr ""
+
+#: jarvis-woo.php:566
+msgid "bounceOutLeft"
+msgstr ""
+
+#: jarvis-woo.php:567
+msgid "bounceOutRight"
+msgstr ""
+
+#: jarvis-woo.php:568
+msgid "bounceOutUp"
+msgstr ""
+
+#. %s: Plugin author.
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:306
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: jarvis-woo.php:1642 jarvis-woo.php:1664
+msgid "Cart"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:82
+msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
+msgstr ""
+
+#: jarvis-woo.php:1670
+msgid "Checkout"
+msgstr ""
+
+#: jarvis-woo.php:1019
+msgid ""
+"Construct your search query here. Add search terms here. You can connect "
+"each terms with natural language using the\n"
+"                                            text fields"
+msgstr ""
+
+#: jarvis-woo.php:495 jarvis-woo.php:1724
+msgid "Conversion Report"
+msgstr ""
+
+#: jarvis-woo.php:1725
+msgid "Conversion Report is a Pro Version Feature. Please"
+msgstr ""
+
+#: jarvis-woo.php:493
+msgid "Custom CSS"
+msgstr ""
+
+#: jarvis-woo.php:1167
+msgid "Custom Icon"
+msgstr ""
+
+#: jarvis-woo.php:1394 jarvis-woo.php:1441
+msgid "Customer Address"
+msgstr ""
+
+#: jarvis-woo.php:1388 jarvis-woo.php:1435
+msgid "Customer Name"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:130
+msgid "Data not found"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:213
+msgid "Deactivating Temporarily"
+msgstr ""
+
+#: classes/jarvis-class-language-builder.php:52
+msgid "Delete"
+msgstr ""
+
+#: jarvis-woo.php:759
+msgid "Disable Cart Item Number"
+msgstr ""
+
+#: jarvis-woo.php:765
+msgid "Disable Cart Item Number on JARVIS Icon "
+msgstr ""
+
+#: jarvis-woo.php:752
+msgid "Disable front end notification"
+msgstr ""
+
+#: jarvis-woo.php:526
+msgid "Disable JARVIS"
+msgstr ""
+
+#: jarvis-woo.php:772
+msgid "Disable JARVIS Icon Animation"
+msgstr ""
+
+#: jarvis-woo.php:778
+msgid "Disable JARVIS Icon Animation for Quick Ball"
+msgstr ""
+
+#: jarvis-woo.php:529
+msgid "Disable JARVIS to load"
+msgstr ""
+
+#: jarvis-woo.php:1300
+msgid "Disable Notification"
+msgstr ""
+
+#: jarvis-woo.php:1324
+msgid "Disable Notification Sound "
+msgstr ""
+
+#: jarvis-woo.php:746
+msgid "Disable notifications"
+msgstr ""
+
+#: jarvis-woo.php:1312
+msgid "Disable sell notification in mobile"
+msgstr ""
+
+#: jarvis-woo.php:686
+msgid "Display Cart Items On Pop Up Window"
+msgstr ""
+
+#: jarvis-woo.php:672
+msgid "Display JARVIS search"
+msgstr ""
+
+#: jarvis-woo.php:716
+msgid "Display Recent Products On Pop Up Window"
+msgstr ""
+
+#: jarvis-woo.php:702
+msgid "Display Recommended Products On Pop Up Window"
+msgstr ""
+
+#: jarvis-woo.php:691
+msgid "Enable Cart Items"
+msgstr ""
+
+#: jarvis-woo.php:822
+msgid "Enable custom quickball on JARVIS"
+msgstr ""
+
+#: jarvis-woo.php:677
+msgid "Enable JARVIS search"
+msgstr ""
+
+#: jarvis-woo.php:737
+msgid "Enable Notification Loop"
+msgstr ""
+
+#: jarvis-woo.php:722
+msgid "Enable Recent Products"
+msgstr ""
+
+#: jarvis-woo.php:708
+msgid "Enable Recommended Products"
+msgstr ""
+
+#: jarvis-woo.php:1292
+msgid "Enable Sale Notification"
+msgstr ""
+
+#: jarvis-woo.php:1304
+msgid "Enable sale notification in mobile"
+msgstr ""
+
+#: jarvis-woo.php:1316
+msgid "Enable Sale Notification Sound"
+msgstr ""
+
+#: jarvis-woo.php:791
+msgid "Enable SUPPORT quickball on JARVIS"
+msgstr ""
+
+#: jarvis-woo.php:572
+msgid "fadeIn"
+msgstr ""
+
+#: jarvis-woo.php:573
+msgid "fadeInDown"
+msgstr ""
+
+#: jarvis-woo.php:574
+msgid "fadeInDownBig"
+msgstr ""
+
+#: jarvis-woo.php:575
+msgid "fadeInLeft"
+msgstr ""
+
+#: jarvis-woo.php:576
+msgid "fadeInLeftBig"
+msgstr ""
+
+#: jarvis-woo.php:577
+msgid "fadeInRight"
+msgstr ""
+
+#: jarvis-woo.php:578
+msgid "fadeInRightBig"
+msgstr ""
+
+#: jarvis-woo.php:579
+msgid "fadeInUp"
+msgstr ""
+
+#: jarvis-woo.php:580
+msgid "fadeInUpBig"
+msgstr ""
+
+#: jarvis-woo.php:584
+msgid "fadeOut"
+msgstr ""
+
+#: jarvis-woo.php:585
+msgid "fadeOutDown"
+msgstr ""
+
+#: jarvis-woo.php:586
+msgid "fadeOutDownBig"
+msgstr ""
+
+#: jarvis-woo.php:587
+msgid "fadeOutLeft"
+msgstr ""
+
+#: jarvis-woo.php:588
+msgid "fadeOutLeftBig"
+msgstr ""
+
+#: jarvis-woo.php:589
+msgid "fadeOutRight"
+msgstr ""
+
+#: jarvis-woo.php:590
+msgid "fadeOutRightBig"
+msgstr ""
+
+#: jarvis-woo.php:591
+msgid "fadeOutUp"
+msgstr ""
+
+#: jarvis-woo.php:592
+msgid "fadeOutUpBig"
+msgstr ""
+
+#: jarvis-woo.php:1400 jarvis-woo.php:1447
+msgid "Fake Sale Notification Duration Time"
+msgstr ""
+
+#: jarvis-woo.php:317 jarvis-woo.php:1046
+msgid "Find Them!"
+msgstr ""
+
+#: jarvis-woo.php:545
+msgid "flash"
+msgstr ""
+
+#: jarvis-woo.php:596
+msgid "flip"
+msgstr ""
+
+#: jarvis-woo.php:597
+msgid "flipInX"
+msgstr ""
+
+#: jarvis-woo.php:598
+msgid "flipInY"
+msgstr ""
+
+#: jarvis-woo.php:599
+msgid "flipOutX"
+msgstr ""
+
+#: jarvis-woo.php:600
+msgid "flipOutY"
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis-recent-sold-product.php:116
+#: classes/widgets/class-wc-widget-jarvis.php:134
+#: classes/widgets/class-wc-widget-jarvis.php:143
+msgid "Font Size:"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:211
+msgid "Found a Bug"
+msgstr ""
+
+#: jarvis-woo.php:1582
+msgid "from"
+msgstr ""
+
+#: jarvis-woo.php:514 jarvis-woo.php:517
+msgid "Full Page View (Legacy)"
+msgstr ""
+
+#: jarvis-woo.php:483
+msgid "GENERAL SETTINGS"
+msgstr ""
+
+#: jarvis-woo.php:1289
+msgid "GENERATE ARTIFICIAL SALE"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:85
+msgid "Get Priority Support "
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:93
+msgid "Get Support for Free Version"
+msgstr ""
+
+#: jarvis-woo.php:476
+msgid "Get The Professional Version"
+msgstr ""
+
+#: jarvis-woo.php:1491
+msgid "Global Font Size For Widgets : "
+msgstr ""
+
+#: jarvis-woo.php:1196
+msgid "Global Notification Delay Time :"
+msgstr ""
+
+#: jarvis-woo.php:1331
+msgid "Global notification delay time for artificial sale :"
+msgstr ""
+
+#: jarvis-woo.php:1588
+msgid "Guest from"
+msgstr ""
+
+#: jarvis-woo.php:659
+msgid "hinge"
+msgstr ""
+
+#: jarvis-woo.php:1510
+msgid "How May I Assist You Today"
+msgstr ""
+
+#: jarvis-woo.php:1505
+msgid "How May I Assist You Today - Left Blank For Default Value"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.quantumcloud.com/"
+msgstr ""
+
+#: jarvis-woo.php:1092
+msgid "Icon - 0"
+msgstr ""
+
+#: jarvis-woo.php:1100
+msgid "Icon - 1"
+msgstr ""
+
+#: jarvis-woo.php:1148
+msgid "Icon - 10"
+msgstr ""
+
+#: jarvis-woo.php:1153
+msgid "Icon - 11"
+msgstr ""
+
+#: jarvis-woo.php:1158
+msgid "Icon - 12"
+msgstr ""
+
+#: jarvis-woo.php:1105
+msgid "Icon - 2"
+msgstr ""
+
+#: jarvis-woo.php:1110
+msgid "Icon - 3"
+msgstr ""
+
+#: jarvis-woo.php:1116
+msgid "Icon - 4"
+msgstr ""
+
+#: jarvis-woo.php:1123
+msgid "Icon - 5"
+msgstr ""
+
+#: jarvis-woo.php:1128
+msgid "Icon - 6"
+msgstr ""
+
+#: jarvis-woo.php:1133
+msgid "Icon - 7"
+msgstr ""
+
+#: jarvis-woo.php:1138
+msgid "Icon - 8"
+msgstr ""
+
+#: jarvis-woo.php:1143
+msgid "Icon - 9"
+msgstr ""
+
+#: jarvis-woo.php:486
+msgid "ICONS & THEME"
+msgstr ""
+
+#: jarvis-woo.php:1551
+msgid "if products found"
+msgstr ""
+
+#: jarvis-woo.php:1557
+msgid "if products not found"
+msgstr ""
+
+#: jarvis-woo.php:1549
+msgid "In Pop Up  Window"
+msgstr ""
+
+#: jarvis-woo.php:1066
+msgid "In Pop Up Window"
+msgstr ""
+
+#: jarvis-woo.php:1201 jarvis-woo.php:1337
+msgid "in sec"
+msgstr ""
+
+#: jarvis-woo.php:1231 jarvis-woo.php:1255 jarvis-woo.php:1279
+#: jarvis-woo.php:1407 jarvis-woo.php:1454
+msgid "in second"
+msgstr ""
+
+#: jarvis-woo.php:1071
+msgid "In Shop Page"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:332
+msgid "Install Now"
+msgstr ""
+
+#: jarvis-woo.php:902 classes/widgets/class-wc-widget-jarvis.php:28
+msgid "JARVIS"
+msgstr ""
+
+#: jarvis-woo.php:474
+msgid "JARVIS Control Panel"
+msgstr ""
+
+#: jarvis-woo.php:477
+msgid "JARVIS is a project by Web Design Company QuantumCloud"
+msgstr ""
+
+#: jarvis-woo.php:505
+msgid "JARVIS Mode"
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis.php:26
+msgid "JARVIS natural search builder form widget"
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis-recent-sold-product.php:24
+msgid "JARVIS Recently Sold Product"
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis-recent-sold-product.php:22
+msgid "JARVIS recently sold product"
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis-recent-viewed-products.php:25
+msgid "JARVIS Recently Viewed Product"
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis-recent-viewed-products.php:23
+msgid "JARVIS recently viewed products"
+msgstr ""
+
+#: jarvis-woo.php:149 jarvis-woo.php:150 jarvis-woo.php:161 jarvis-woo.php:162
+msgid "JARVIS-Lite"
+msgstr ""
+
+#: jarvis-woo.php:552
+msgid "jello"
+msgstr ""
+
+#: jarvis-woo.php:1594
+msgid "just purchased"
+msgstr ""
+
+#: jarvis-woo.php:492
+msgid "LANGUAGE CENTER"
+msgstr ""
+
+#: jarvis-woo.php:1606
+msgid "Last sold Time"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Let your store help your customers like a real person with your own "
+"completely customizable search."
+msgstr ""
+
+#: jarvis-woo.php:604
+msgid "lightSpeedIn"
+msgstr ""
+
+#: jarvis-woo.php:605
+msgid "lightSpeedOut"
+msgstr ""
+
+#: jarvis-woo.php:902
+msgid "Loading Control Options"
+msgstr ""
+
+#: jarvis-woo.php:488
+msgid "MESSAGE CENTER"
+msgstr ""
+
+#: jarvis-woo.php:1226 jarvis-woo.php:1274
+msgid "Message display duration time"
+msgstr ""
+
+#: jarvis-woo.php:1250
+msgid "Message display duration time "
+msgstr ""
+
+#: jarvis-woo.php:1549 jarvis-woo.php:1642 jarvis-woo.php:1681
+msgid "Message settings for"
+msgstr ""
+
+#: jarvis-woo.php:1568 jarvis-woo.php:1617
+msgid "Message settings for "
+msgstr ""
+
+#: jarvis-woo.php:1695
+msgid "min ago"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:23
+msgid "More WordPress Goodies for You!"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:212
+msgid "Need More Features"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:386
+msgid "Network Activate"
+msgstr ""
+
+#: jarvis-woo.php:924 jarvis-woo.php:948 jarvis-woo.php:997
+msgid "NO"
+msgstr ""
+
+#: jarvis-woo.php:1377
+msgid "No Products"
+msgstr ""
+
+#: jarvis-woo.php:1576
+msgid "No recently sold products found "
+msgstr ""
+
+#: jarvis-woo.php:842 jarvis-woo.php:852
+msgid "Offset"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:86
+msgid "Online KnowledgeBase"
+msgstr ""
+
+#: functions.php:39
+msgid "Option"
+msgstr ""
+
+#: functions.php:42
+msgid "Option could be price, category, terms etc."
+msgstr ""
+
+#: classes/jarvis-class-language-builder.php:23
+msgid "Options"
+msgstr ""
+
+#: jarvis-woo.php:490
+msgid "ORDER NOTIFICATION"
+msgstr ""
+
+#: jarvis-woo.php:830
+msgid "Override Icon Position"
+msgstr ""
+
+#: functions.php:35
+msgid "Place your natural language text here."
+msgstr ""
+
+#: functions.php:46
+msgid "Placeholder"
+msgstr ""
+
+#: functions.php:49
+msgid "Placeholder for option which will be displayed in frontend"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:216
+msgid ""
+"Please provide some details so we can improve the plugin for you (optional)"
+msgstr ""
+
+#: jarvis-woo.php:702 jarvis-woo.php:716 jarvis-woo.php:816 jarvis-woo.php:865
+#: jarvis-woo.php:902 jarvis-woo.php:1003 jarvis-woo.php:1072
+#: jarvis-woo.php:1177 jarvis-woo.php:1293 jarvis-woo.php:1305
+#: jarvis-woo.php:1317 jarvis-woo.php:1358 jarvis-woo.php:1420
+#: jarvis-woo.php:1695
+msgid "Pro version only"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:125
+msgid ""
+"Problem in processing your form submission request! Apologies for the "
+"inconveniences.<br> \n"
+"Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-"
+"size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get "
+"back to you right away!"
+msgstr ""
+
+#: classes/jarvis-class-language-builder.php:26
+msgid "Product Categories"
+msgstr ""
+
+#: classes/jarvis-class-language-builder.php:29
+msgid "Product Tags"
+msgstr ""
+
+#: jarvis-woo.php:546
+msgid "pulse"
+msgstr ""
+
+#: jarvis-woo.php:1600
+msgid "purchased a"
+msgstr ""
+
+#: functions.php:25
+msgid "px"
+msgstr ""
+
+#: jarvis-woo.php:858
+msgid "px from Bottom of the Browser Window"
+msgstr ""
+
+#: jarvis-woo.php:848
+msgid "px from Right of the Browser Window"
+msgstr ""
+
+#: jarvis-woo.php:1729
+msgid "QuantumCloud"
+msgstr ""
+
+#: jarvis-woo.php:1684
+msgid "Questions or Comments? Contact Us Value"
+msgstr ""
+
+#: jarvis-woo.php:512 jarvis-woo.php:516 jarvis-woo.php:1681
+msgid "Quick Ball"
+msgstr ""
+
+#. Author of the plugin
+msgid "QunatumCloud"
+msgstr ""
+
+#: jarvis-woo.php:1568 jarvis-woo.php:1570
+msgid "Recently Sold Products "
+msgstr ""
+
+#: jarvis-woo.php:1501 jarvis-woo.php:1617
+msgid "Recently Viewed Products "
+msgstr ""
+
+#: jarvis-woo.php:1490
+msgid "Recently Viewed Products - Left Blank For Default Value "
+msgstr ""
+
+#: jarvis-woo.php:1515 jarvis-woo.php:1520
+msgid "Recommended Products"
+msgstr ""
+
+#: jarvis-woo.php:1351
+msgid "Remove"
+msgstr ""
+
+#: jarvis-woo.php:1040
+msgid "Rename Search Button Text"
+msgstr ""
+
+#: classes/jarvis-class-language-builder.php:54
+msgid "Reorder"
+msgstr ""
+
+#: jarvis-woo.php:730
+msgid "Repeat pop up notification through out users stay on the website"
+msgstr ""
+
+#: classes/shortcodes/class-shortcode-qc-jarvis.php:282
+msgid "Reset"
+msgstr ""
+
+#: jarvis-woo.php:1743
+msgid "Reset all options to default"
+msgstr ""
+
+#: jarvis-woo.php:660
+msgid "rollIn"
+msgstr ""
+
+#: jarvis-woo.php:661
+msgid "rollOut"
+msgstr ""
+
+#: jarvis-woo.php:609
+msgid "rotateIn"
+msgstr ""
+
+#: jarvis-woo.php:610
+msgid "rotateInDownLeft"
+msgstr ""
+
+#: jarvis-woo.php:611
+msgid "rotateInDownRight"
+msgstr ""
+
+#: jarvis-woo.php:612
+msgid "rotateInUpLeft"
+msgstr ""
+
+#: jarvis-woo.php:613
+msgid "rotateInUpRight"
+msgstr ""
+
+#: jarvis-woo.php:617
+msgid "rotateOut"
+msgstr ""
+
+#: jarvis-woo.php:618
+msgid "rotateOutDownLeft"
+msgstr ""
+
+#: jarvis-woo.php:620
+msgid "rotateOutDownRight"
+msgstr ""
+
+#: jarvis-woo.php:622
+msgid "rotateOutUpLeft"
+msgstr ""
+
+#: jarvis-woo.php:623
+msgid "rotateOutUpRight"
+msgstr ""
+
+#: jarvis-woo.php:547
+msgid "rubberBand"
+msgstr ""
+
+#: jarvis-woo.php:1288
+msgid ""
+"Sale alerts will help you sell more products by creating an urgency among "
+"prospective buyers by showing who else just brought products from your store."
+" If your store is not so busy, you can create artificial sell alerts below:"
+msgstr ""
+
+#: jarvis-woo.php:1470
+msgid "Save Order Notification"
+msgstr ""
+
+#: jarvis-woo.php:1748
+msgid "Save Settings"
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis.php:140
+msgid "search phrase font size."
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis.php:118
+msgid "Search Phrase:"
+msgstr ""
+
+#: jarvis-woo.php:2362
+msgid "Search Results:"
+msgstr ""
+
+#: jarvis-woo.php:485
+msgid "SEARCH SETTINGS"
+msgstr ""
+
+#: jarvis-woo.php:1357 jarvis-woo.php:1419 jarvis-woo.php:1426
+msgid "Select a product"
+msgstr ""
+
+#: jarvis-woo.php:1366
+msgid "Select product(s)"
+msgstr ""
+
+#: jarvis-woo.php:865
+msgid "Select recommended products from dropdown to show them on front end"
+msgstr ""
+
+#: jarvis-woo.php:973
+msgid "Selected Pages Only"
+msgstr ""
+
+#: jarvis-woo.php:1205
+msgid "SET NOTIFICATIONS FOR JARVIS"
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis.php:120
+msgid "Set search sentence from WooCommerce -> JARVIS-Woo"
+msgstr ""
+
+#: class-qc-free-plugin-upgrade-notice.php:101
+msgid "Settings"
+msgstr ""
+
+#: jarvis-woo.php:548
+msgid "shake"
+msgstr ""
+
+#: jarvis-woo.php:956
+msgid "Show on  Pages"
+msgstr ""
+
+#: jarvis-woo.php:932
+msgid "Show on Blog Posts"
+msgstr ""
+
+#: jarvis-woo.php:907
+msgid "Show on Home Page"
+msgstr ""
+
+#: jarvis-woo.php:980
+msgid "Show on WooCommerce"
+msgstr ""
+
+#: jarvis-woo.php:1059
+msgid "Show Search Result"
+msgstr ""
+
+#: jarvis-woo.php:509
+msgid "Slide Bar (Pro Only)"
+msgstr ""
+
+#: jarvis-woo.php:629
+msgid "slideInDown"
+msgstr ""
+
+#: jarvis-woo.php:630
+msgid "slideInLeft"
+msgstr ""
+
+#: jarvis-woo.php:631
+msgid "slideInRight"
+msgstr ""
+
+#: jarvis-woo.php:628
+msgid "slideInUp"
+msgstr ""
+
+#: jarvis-woo.php:636
+msgid "slideOutDown"
+msgstr ""
+
+#: jarvis-woo.php:637
+msgid "slideOutLeft"
+msgstr ""
+
+#: jarvis-woo.php:638
+msgid "slideOutRight"
+msgstr ""
+
+#: jarvis-woo.php:635
+msgid "slideOutUp"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:208
+msgid "Sorry to see you go"
+msgstr ""
+
+#: functions.php:1207
+msgid "Sorry! fail to send email."
+msgstr ""
+
+#: jarvis-woo.php:1027
+msgid "Start building your search terms here"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:255
+msgid "Submitting form"
+msgstr ""
+
+#: class-qc-free-plugin-upgrade-notice.php:105
+#: qc-support-promo-page/class-qc-support-promo-page.php:24
+msgid "Support"
+msgstr ""
+
+#: jarvis-woo.php:798
+msgid "Support Email Address"
+msgstr ""
+
+#: jarvis-woo.php:785
+msgid "Support Quickball on JARVIS"
+msgstr ""
+
+#: jarvis-woo.php:549
+msgid "swing"
+msgstr ""
+
+#: jarvis-woo.php:550
+msgid "tada"
+msgstr ""
+
+#: functions.php:32
+msgid "Text"
+msgstr ""
+
+#: jarvis-woo.php:536
+msgid ""
+"This animation will appear when you click JARVIS icon on bottom right and "
+"close popup form "
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis.php:131
+msgid "This is optional and appears above the widget."
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:471
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis-recent-sold-product.php:112
+#: classes/widgets/class-wc-widget-jarvis-recent-viewed-products.php:124
+msgid "Title of the widget."
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis-recent-sold-product.php:107
+#: classes/widgets/class-wc-widget-jarvis-recent-viewed-products.php:119
+#: classes/widgets/class-wc-widget-jarvis.php:126
+msgid "Title:"
+msgstr ""
+
+#: jarvis-woo.php:1658
+msgid "Total Price"
+msgstr ""
+
+#: jarvis-woo.php:1487
+msgid "Translate various titles for popup view"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:354
+msgid "Update Now"
+msgstr ""
+
+#: jarvis-woo.php:1725
+msgid "Upgrade to the Pro Version."
+msgstr ""
+
+#: jarvis-woo.php:1186
+msgid "Upload Custom Icon"
+msgstr ""
+
+#: jarvis-woo.php:1177
+msgid "Upload custom Icon"
+msgstr ""
+
+#: jarvis-woo.php:1525
+msgid "User \"From\" Purchased a"
+msgstr ""
+
+#: jarvis-woo.php:508
+msgid "Vertical Balls (Pro Only)"
+msgstr ""
+
+#: jarvis-woo.php:1625
+msgid "View Detail"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:129
+msgid ""
+"We can't detect any plugin information. This is most probably because you "
+"have not included the code in the plugin main file."
+msgstr ""
+
+#: classes/widgets/class-wc-widget-jarvis.php:149
+msgid "Widget content font size."
+msgstr ""
+
+#: jarvis-woo.php:551
+msgid "wobble"
+msgstr ""
+
+#. Name of the plugin
+msgid "WooCommerce Shop Assistant JARVIS"
+msgstr ""
+
+#: jarvis-woo.php:917 jarvis-woo.php:941 jarvis-woo.php:990
+msgid "YES"
+msgstr ""
+
+#: jarvis-woo.php:1003
+msgid "You can also load JARVIS on specific page/s only using shortcode:"
+msgstr ""
+
+#: jarvis-woo.php:1707
+msgid "You can paste or write your custom css here."
+msgstr ""
+
+#: jarvis-woo.php:1652
+msgid "You do not have any products in the cart "
+msgstr ""
+
+#: jarvis-woo.php:1631
+msgid "You have not viewed any products yet !"
+msgstr ""
+
+#: jarvis-woo.php:1645
+msgid "Your Basket - Left Blank For Default Value"
+msgstr ""
+
+#: functions.php:1237 qc-support-promo-page/class-qc-support-promo-page.php:186
+msgid "Your email was sent successfully. Thanks!"
+msgstr ""
+
+#: jarvis-woo.php:643
+msgid "zoomIn"
+msgstr ""
+
+#: jarvis-woo.php:644
+msgid "zoomInDown"
+msgstr ""
+
+#: jarvis-woo.php:645
+msgid "zoomInLeft"
+msgstr ""
+
+#: jarvis-woo.php:646
+msgid "zoomInRight"
+msgstr ""
+
+#: jarvis-woo.php:647
+msgid "zoomInUp"
+msgstr ""
+
+#: jarvis-woo.php:651
+msgid "zoomOut"
+msgstr ""
+
+#: jarvis-woo.php:652
+msgid "zoomOutDown"
+msgstr ""
+
+#: jarvis-woo.php:653
+msgid "zoomOutLeft"
+msgstr ""
+
+#: jarvis-woo.php:654
+msgid "zoomOutRight"
+msgstr ""
+
+#: jarvis-woo.php:655
+msgid "zoomOutUp"
+msgstr ""

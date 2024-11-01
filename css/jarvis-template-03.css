@@ -1,0 +1,712 @@
+/************************************
+RECENT VIEWED PRODUCT
+.jarvis_recently_viewed_products
+*********************************/
+.jarvis_title {
+    color: #010101 !important;
+}
+
+.qcld_jarvis_recently_viewed_body {
+    padding: 17px 0 15px;
+}
+
+.qcld_cart_prod_table ul.jarvis_product_list {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.jarvis_recently_viewed_products ul.jarvis_product_list li.jarvis_product {
+    list-style: none;
+    margin: 2px 0;
+    padding: 5px 0 10px 55px;
+    border-bottom: 1px dotted #dce2e6;
+    clear: both;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.jarvis_recently_viewed_products ul.jarvis_product_list li.jarvis_product img {
+    width: 48px;
+    position: absolute;
+    left: 0;
+    height: auto;
+    box-shadow: none;
+    margin: 0 10px 0 0 !important;
+    border-bottom: 2px solid #00a2ca;
+    border-radius: 0 0 5px 5px;
+}
+
+.jarvis_recently_viewed_products h3.jarvis_product_title {
+    padding: 0;
+    margin: 2px 0 4px 0;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000;
+}
+
+.jarvis_recently_viewed_products ul.jarvis_product_list li.jarvis_product .price {
+    text-align: left;
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00a2ca;
+}
+
+.jarvis_recently_viewed_products .onsale, ul.jarvis_product_list li.jarvis_product .star-rating, .price del {
+    display: none;
+}
+
+.jarvis_recently_viewed_products ul.jarvis_product_list li.jarvis_product a.jarvis-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+}
+
+a.jarvis-button {
+    border: 1px solid #00a2ca;
+    padding: 4px 10px !important;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    border-radius: 5px 0;
+    box-shadow: none !important;
+    overflow: hidden !important;
+    position: relative;
+    transition: background 0.5s ease;
+    text-transform: none !important;
+    margin: 5px;
+}
+
+a.jarvis-button:hover {
+    background: #00a2ca;
+    color: #fff !important;
+    border: 1px solid #00a2ca;
+}
+
+/************************************
+PRODUCT SEARCH
+.woocommerce-jarvis
+*********************************/
+
+.woocommerce-jarvis {
+    position: relative;
+    transition: 0.3s;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+.woocommerce-jarvis .jarvis-title {
+    display: block;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: .8em;
+}
+
+.woocommerce-jarvis .jarvis-phrase {
+    position: relative;
+}
+
+.woocommerce-jarvis .jarvis-reset {
+    position: absolute;
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 1.5em;
+    right: 15px;
+    top: 65px;
+    background: #ffffff url("../images/reset-light.png") no-repeat right 0;
+    padding: 0 17px 0 6px;
+    display: none;
+    z-index: 100000;
+}
+
+.woocommerce-jarvis:hover .jarvis-reset {
+    text-decoration: none;
+    display: block;
+}
+
+.woocommerce-jarvis .jarvis-find {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.41);
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    line-height: inherit;
+    vertical-align: baseline;
+    display: inline-block;
+    height: 1.4em;
+}
+
+.woocommerce-jarvis.jarvis-active:hover .jarvis-reset {
+    display: block;
+}
+
+.woocommerce-jarvis .jarvis-field {
+    position: relative;
+    outline: none;
+    white-space: nowrap;
+    vertical-align: baseline;
+    display: inline-block !important;
+    color: #00a2ca;
+}
+
+.woocommerce-jarvis .jarvis-field.jarvis-field-select {
+    cursor: pointer;
+}
+
+.woocommerce-jarvis .jarvis-field.jarvis-field-select select {
+    background: none;
+    opacity: .05;
+    font-size: inherit;
+    left: -3px;
+    width: auto;
+    text-align: center;
+    color: inherit;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(255, 0, 0, 0.07);
+    box-shadow: inset 0 0 1px rgba(255, 0, 0, 0.58);
+    font-size: inherit;
+    letter-spacing: inherit;
+}
+
+.woocommerce-jarvis .jarvis-field.jarvis-field-input input {
+    background: none;
+    font-size: inherit;
+    width: 2.4em;
+    text-align: center;
+    color: inherit;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-transform: inherit;
+    display: inline-block !important;
+    vertical-align: baseline;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.44);
+    line-height: inherit;
+}
+
+.woocommerce-jarvis .jarvis-field.jarvis-field-input .jarvis-field-label {
+    cursor: pointer;
+    line-height: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+    font-style: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    display: inline-block !important;
+    vertical-align: baseline;
+}
+
+.woocommerce-jarvis .jarvis-field > a {
+    position: relative;
+    text-decoration: none;
+    display: inline-block !important;
+    vertical-align: middle;
+    color: #00a2ca;
+    border-bottom: 1px dotted #00a2ca;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.woocommerce-jarvis .jarvis-field ul {
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 50%; /* width: 6em; */
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 2px;
+    z-index: 100000;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.09);
+    padding: 0;
+    margin: 0;
+}
+
+.woocommerce-jarvis .jarvis-field ul li {
+    display: block;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.woocommerce-jarvis .jarvis-field ul li a {
+    background-color: #00a2ca;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 55px;
+    padding: 0 14px;
+    white-space: nowrap;
+    min-width: 118px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.woocommerce-jarvis .jarvis-field ul li a:hover {
+    background-color: #00a2ca;
+}
+
+.woocommerce-jarvis .jarvis-field ul li.selected a {
+    background-color: #00a2ca;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    margin: -1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.woocommerce-jarvis .jarvis-field ul li:last-child {
+    border-bottom: 0;
+}
+
+.woocommerce-jarvis .jarvis-field select {
+    position: absolute;
+    left: 0px;
+    top: -43px;
+}
+
+.woocommerce-jarvis .jarvis-field .jarvis-transition-step-1 {
+    top: -11px;
+    opacity: 0;
+}
+
+.woocommerce-jarvis .jarvis-field .jarvis-transition-step-2 {
+    top: 11px;
+    opacity: 0;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-none {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-none .jarvis-phrase {
+    display: inline;
+    clear: both;
+    padding: 0;
+    float: none;
+    margin: 0;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-none .jarvis-title {
+    display: inline-block;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-none .jarvis-reset {
+    right: auto;
+    left: 0;
+    top: auto;
+    margin: -11px 0 0 0;
+    position: absolute;
+    padding-left: 0;
+}
+
+.first_row {
+    text-align: center;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-themed {
+    border-radius: 1px;
+    letter-spacing: -.02em;
+    text-align: center;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-themed .jarvis-title {
+    border-radius: 1px 1px 0 0;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-themed .jarvis-phrase {
+    border: 1px solid #00a2ca;
+    border-radius: 10px;
+}
+
+.jarvis-inner {
+    margin: 10px;
+    border: 1px solid #00a2ca;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 2vw;
+    line-height: 150%;
+    letter-spacing: 1px;
+    min-height: 234px;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-themed .jarvis-find {
+    padding: 0 14px 0 0;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-title {
+    color: white;
+    border-radius: 2px 2px 0 0;
+    background: black;
+    padding: 1px 10px 0px;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-field > a {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.44);
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-find, .jarvis-find-ajax {
+    font-size: 2.5vw;
+    padding: 5px 15px;
+    border: 2px solid #00a2ca;
+    background: #00a2ca;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.41);
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: inherit;
+    vertical-align: baseline;
+    display: inline-block;
+    height: 1.4em;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-find:before, .jarvis-find-ajax:before {
+    content: '';
+    height: 6px;
+    width: 25px;
+    background: #00a2ca;
+    position: absolute;
+    top: -2px;
+    left: -2px
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-find:after, .jarvis-find-ajax:after {
+    content: '';
+    height: 6px;
+    width: 25px;
+    background: #00a2ca;
+    position: absolute;
+    bottom: -2px;
+    right: -2px
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-light .jarvis-find:hover, .jarvis-find-ajax:hover {
+    background: #0083a3;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark {
+    background-color: #000;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    color: #F1F1F1;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-title {
+    color: black;
+    background: white;
+    padding: 1px 10px 0px;
+    border: 1px solid rgb(241, 241, 241);
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-field > a {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-find {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.29);
+    background: url(../images/light-arrow.png) no-repeat 100% 57%;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-reset {
+    background-image: url("../images/reset-dark.png");
+    color: rgb(71, 71, 71);
+    z-index: 100000;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-dark .jarvis-field.jarvis-field-input input {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean {
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean .jarvis-title {
+    color: white;
+    border-radius: 2px 2px 0 0;
+    background: black;
+    padding: 1px 10px 0px;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean .jarvis-field > a {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.44);
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean .jarvis-find {
+    background: url(../images/dark-arrow.png) no-repeat 100% 57%;
+}
+
+.woocommerce-jarvis.woocommerce-jarvis-clean .jarvis-field.jarvis-field-input input {
+}
+
+/**************************************
+ CART PRODUCT
+ .qcld_cart-products
+**************************************/
+.qcld_cart-products {
+    text-align: left;
+}
+
+.qcld_cart_prod_table {
+    height:300px;
+    border: solid 1px #00a2ca;
+    border-radius: 5px;
+}
+
+.qcld_cart-products .qcld_cart_head {
+    border-bottom: solid 1px #00a2ca;
+    font-weight: bold;
+}
+
+.qcld_cart_prod_table_body {
+    /*height: 230px;*/
+    overflow: hidden;
+    margin: 0 5px 10px 0;
+    padding: 0 10px;
+}
+
+.qcld_no_cartprods {
+    text-align: center;
+    margin: 85px 0 0;
+}
+
+.qcld_cart_head span {
+    display: inline-block;
+    padding: 6px;
+    box-sizing: border-box; /*text-align: center;*/
+}
+
+.qcld_cart_head span.qcld_cart_title {
+    width: 55%;
+}
+
+.qcld_cart_head span.qcld_cart_price, .qcld_cart-products .cartPrice {
+    width: 26%;
+}
+
+.qcld_cart_head span.qcld_cart_qty, .qcld_cart-products td.qcld_cart_qty {
+    width: 14%;
+}
+
+.qcld_cart-products td {
+    padding: 6px;
+}
+
+.qcld_cart-products img {
+    max-height: 48px;
+    width: auto;
+    border-bottom: 2px solid #00a2ca;
+    border-right: 1px solid #b7d4dc;
+    border-radius: 0 0 5px 5px;
+}
+
+.qcld_checkout_buttons {
+    text-align: right;
+    margin: 11px 0 0 0;
+    height: 42px;
+    padding: 0 12px;
+}
+
+/**********************************
+Featured Product
+**************************/
+.jarvis-featured-products ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.jarvis-featured-products ul li {
+    display: inline-table;
+    padding-left: 2px;
+    margin: 8px;
+    max-width: 225px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.jarvis-featured-products ul li h3.jarvis_product_title {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.jarvis-featured-products ul li h3.jarvis_product_title a {
+    color: #000;
+}
+
+.jarvis-featured-products ul li .price {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #00a2ca;
+    line-height: normal;
+}
+
+.jarvis-featured-products ul li .jarvis-product-summary .jarvis-product-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.jarvis-featured-products ul li .jarvis-product-summary .jarvis-product-table .jarvis-product-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 225px;
+}
+
+/*modal end*/
+@media screen and ( min-width: 1101px) and (max-width: 1380px ) {
+    #jarvis_body .jarvis_recently_viewed_products ul.products li.product .price {
+        min-width: 0;
+    }
+}
+
+@media screen and ( min-width: 992px) and (max-width: 1200px ) {
+    .qcld_cart-products {
+        width: 100% !important;
+    }
+
+    .jarvis_recently_viewed_products {
+        width: 100% !important;
+    }
+
+    #jarvis_body .jarvis_recently_viewed_products a.button.add_to_cart_button {
+        color: inherit;
+        display: block;
+        position: relative;
+        right: 0;
+    }
+
+    del {
+        display: inline !important;
+    }
+}
+
+@media screen and ( max-width: 1300px ) {
+    #jarvis_body .add_to_cart_button {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and ( max-width: 992px ) {
+    #jarvis_body .woocommerce-jarvis {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+
+    #jarvis_body .jarvis-inner {
+        min-height: 0;
+    }
+
+    .jarvis_recently_viewed_products {
+        float: left;
+        width: 49%;
+    }
+
+    .qcld_cart-products {
+        float: right;
+        width: 49%;
+    }
+
+    /* #jarvis_body .jarvis-inner {
+            font-size: 5vw;
+        }
+
+        .woocommerce-jarvis.woocommerce-jarvis-light .jarvis-find {
+            font-size: 4vw;
+        }*/
+}
+
+@media screen and ( max-width: 1100px ) {
+    .jarvis_recently_viewed_products, .woocommerce-jarvis.woocommerce-jarvis-themed .jarvis-phrase {
+    }
+
+    .woocommerce ul.products li.product, .jarvis_recently_viewed_products .woocommerce-page ul.products li.product, .jarvis_recently_viewed_products .woocommerce-page[class*=columns-] ul.products li.product, .jarvis_recently_viewed_products .woocommerce[class*=columns-] ul.products li.product {
+        width: 100%;
+    }
+
+    #jarvis_body .add_to_cart_button {
+        padding: 5px 10px;
+    }
+
+    .onsale {
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 992px ) {
+    .jarvis_title {
+        font-size: 3vw;
+    }
+
+    #jarvis_body .jarvis-inner {
+        font-size: 5.5vw;
+    }
+
+    .woocommerce-jarvis.woocommerce-jarvis-light .jarvis-find {
+        font-size: 4.5vw;
+    }
+
+    #jarvis_body .recommended-products .woocommerce ul.products li.product {
+        width: 30%;
+    }
+
+    .jarvis_recently_viewed_products {
+        width: 100%;
+    }
+
+    #jarvis_body .jarvis-inner {
+    }
+
+    .qcld_cart-products {
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 640px ) {
+    #jarvis_body .recommended-products .woocommerce ul.products li.product {
+        width: 46%;
+    }
+
+    .jarvis_recently_viewed_products {
+        float: none;
+        width: 100%;
+        clear: both;
+    }
+
+    .qcld_cart-products {
+        float: none;
+        width: 100%;
+        clear: both;
+    }
+}

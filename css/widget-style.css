@@ -1,0 +1,75 @@
+
+.widget .widget-inside .jarvis-widget {
+    margin: .7em 0;
+}
+
+.widget .widget-inside .jarvis-widget p {
+    margin: 0 0 1.1em 0;
+}
+
+.widget .widget-inside .jarvis-widget label {
+    margin: 0 0 .5em;
+    display: block;
+}
+
+.widget .widget-inside .jarvis-widget input[type="text"] {
+}
+
+.widget .widget-inside .jarvis-widget input.small-number {
+    width: 40px;
+}
+
+.widget .widget-inside .jarvis-widget small {
+    display: block;
+    margin: .4em 0 0;
+    color: rgb(134, 134, 134);
+}
+
+.widget .widget-inside .jarvis-widget .wp-picker-default {
+    background: url(../images/widget-reset.png) no-repeat 5px 4px;
+    border: none;
+    width: 21px;
+    height: 23px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-indent: -9999px;
+    box-shadow: none;
+}
+
+.widget .widget-inside .jarvis-widget .wp-picker-holder {
+    position: relative;
+    left: -14px;
+    margin-top: -2px;
+}
+
+.widget .widget-inside .jarvis-widget .widget-phrase {
+    padding: 9px 12px;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin: 3px 0 20px;
+    font-size: 12px;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.04);
+    background: rgb(255, 255, 255);
+    max-width: 655px;
+    line-height: 1.4em;
+    color: rgb(88, 88, 88);
+    position: relative;
+}
+
+.widget .widget-inside .jarvis-widget .widget-no-phrase {
+    padding: 9px 12px;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin: 7px 0 20px;
+    font-size: 12px;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.04);
+    background: rgb(255, 255, 255);
+    max-width: 655px;
+    line-height: 1.4em;
+    color: rgb(88, 88, 88);
+    position: relative;
+}
